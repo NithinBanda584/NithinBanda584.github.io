@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Nithin Banda | Portfolio</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#0d1117;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+section{
+  padding:60px 10%;
+}
+
+h2{
+  color:#58a6ff;
+}
+
+a{
+  color:#58a6ff;
+  text-decoration:none;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#161b22;
+  padding:15px 10%;
+  display:flex;
+  justify-content:space-between;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+}
+
+nav a:hover{
+  color:#58a6ff;
+}
+
+/* ===== HERO ===== */
+.hero{
+  padding:120px 10% 40px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:42px;
+  margin:0;
+}
+
+.typing{
+  color:#58a6ff;
+  margin-top:10px;
+  font-size:20px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  background:#58a6ff;
+  color:black;
+  padding:10px 18px;
+  border-radius:8px;
+  margin:8px;
+  display:inline-block;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* ===== CARDS ===== */
+.card{
+  background:#161b22;
+  padding:25px;
+  border-radius:12px;
+  margin:15px 0;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 18px #58a6ff55;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.skills span{
+  background:#21262d;
+  padding:8px 14px;
+  border-radius:20px;
+  margin:6px;
+  opacity:0;
+  transform:translateY(20px);
+  transition:0.5s;
+}
+
+.skills span.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#161b22;
+  margin-top:40px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <b>Nithin Banda</b>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Nithin Banda 👋</h1>
+  <div class="typing" id="typing"></div>
+
+  <br><br>
+
+  <a href="nithin_resume.pdf" target="_blank" class="btn">View Resume</a>
+  <a href="nithin_resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    Software Developer and AI/ML enthusiast with strong skills in Python,
+    automation, and intelligent systems. Passionate about building real-world
+    solutions that solve practical problems through technology.
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>SQL</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Git & GitHub</span>
+    <span>Canva</span>
+  </div>
+
+  <h2 style="margin-top:40px;">Soft Skills</h2>
+  <div class="skills">
+    <span>Communication</span>
+    <span>Problem Solving</span>
+    <span>Analytical Thinking</span>
+    <span>Team Collaboration</span>
+    <span>Quick Learner</span>
+    <span>Adaptability</span>
+  </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <b>B.Tech – Kommuri Pratap Reddy Institute of Technology</b><br>
+    2022–2026 | CGPA: 7.7
+  </div>
+
+  <div class="card">
+    <b>Intermediate – Sri Medha V Jr College</b><br>
+    2020–2022 | 59.8%
+  </div>
+
+  <div class="card">
+    <b>SSC – Shishu Mandir School</b><br>
+    2019–2020 | CGPA: 10.0
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <b>Garment Category & Stitching Style Recognition</b><br>
+    Hybrid Transfer Learning model for automated garment classification.<br><br>
+    <a href="https://github.com/NithinBanda584/GarmentCategory" target="_blank">GitHub Link</a>
+  </div>
+
+  <div class="card">
+    <b>Car License Plate Detection & Recognition</b><br>
+    Computer Vision + OCR based plate recognition system.<br><br>
+    <a href="https://github.com/NithinBanda584/nithin-project" target="_blank">GitHub Link</a>
+  </div>
+
+  <div class="card">
+    <b>Weather Forecasting App</b><br>
+    Real-time weather app using API integration.
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    📧 nithinbanda42@gmail.com <br>
+    🔗 <a href="https://github.com/NithinBanda584">GitHub</a><br>
+    🔗 <a href="https://www.linkedin.com/in/nithin-banda-1606nn">LinkedIn</a>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 Nithin Banda | Portfolio
+</footer>
+
+
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* Typing animation */
+const text = "Software Developer | AI/ML Enthusiast | Python Programmer";
+let i=0;
+function type(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type,40);
+  }
+}
+type();
+
+
+/* Skills scroll animation */
+const skills = document.querySelectorAll(".skills span");
+
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight - 80;
+
+  skills.forEach((skill,index) => {
+    const top = skill.getBoundingClientRect().top;
+
+    if(top < trigger){
+      setTimeout(()=>{
+        skill.classList.add("show");
+      }, index*100);
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
